@@ -14,7 +14,7 @@
 
 .btn--primary {
     background-color: var(--primary);
-    color: var(--primaryFont);
+    color: var(--primary);
     border: 1px solid var(--primary);
 }
 

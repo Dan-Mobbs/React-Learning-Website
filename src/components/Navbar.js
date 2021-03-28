@@ -34,7 +34,7 @@ function Navbar() {
                 <div className="navbar-container container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         <BiTrain className="navbar-icon" />
-                        Model Train Shop
+                        The Model Train.co
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars />}
@@ -57,12 +57,12 @@ function Navbar() {
                         </li>
                         <li className="nav-btn">
                             {button ? (
-                                <Link to="/login" className="btn-link">
-                                    <Button buttonStyle="btn--outline" onClick={closeMobileMenu}>Login</Button>
+                                <Link to="/signup" className="btn-link">
+                                    <Button buttonStyle="btn--outline" onClick={closeMobileMenu}>SignUp</Button>
                                 </Link>
                             ): (
-                                <Link to="/login" className="btn-link">
-                                    <Button buttonStyle="btn--outline" buttonSize="btn--mobile" onClick={closeMobileMenu}>Login</Button>
+                                <Link to="/signup" className="btn-link">
+                                    <Button buttonStyle="btn--outline" buttonSize="btn--mobile" onClick={closeMobileMenu}>SignUp</Button>
                                 </Link>
                             )}
                         </li>
