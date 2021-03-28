@@ -17,10 +17,10 @@ export const Button = ({
 }) => {
 
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
-    const checkButtonSize = STYLES.includes(buttonSize) ? buttonSize : SIZES[0]
-    const checkButtonColor = STYLES.includes(buttonColor) ? buttonColor : COLOR[0]
+    const checkButtonSize = SIZE.includes(buttonSize) ? buttonSize : SIZE[0]
+    const checkButtonColor = COLOR.includes(buttonColor) ? buttonColor : null
 
-    return {
-        <Button className={'btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}'} onClick={onClick} type={type}>{children}</Button> 
-    }
+    return (
+        <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`} onClick={onClick} type={type}>{children}</button> 
+    )
 }
